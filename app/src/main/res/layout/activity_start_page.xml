@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alertgy.alertgydemo.StartPageActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/startChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/glucoseText"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/doneButton"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:text="Done"
+        android:onClick="onClickDone"/>
+
+    <TextView
+        android:id="@+id/glucoseText"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="90 mg/dL" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startChart"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_marginLeft="78dp"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startChart"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_below="@+id/startChart"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_marginLeft="78dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_below="@+id/startChart"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_marginLeft="78dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_below="@+id/startChart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="78dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="133dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/doneButton"
+        android:layout_alignEnd="@+id/doneButton"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-95"
+        android:text="mg/dL"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
